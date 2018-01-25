@@ -14,7 +14,6 @@ public class CustomerService {
 	public void register(Customer customer){
 		
 		customer.setToken(generateToken());
-		
 		dao.save(customer);
 	}
 
@@ -23,7 +22,6 @@ public class CustomerService {
 	}
 
 	public Customer addCustomer(Customer customer) {
-		
 		try{
 			return dao.save(customer);
 		}catch (Exception e) {
@@ -32,8 +30,7 @@ public class CustomerService {
 		return null;
 	}
 
-	public Customer changeEmail(String oldEmail, String newEmail) {
-		Customer customer = new Customer();
+	public Customer changeEmail(Customer customer, String newEmail) {
 		dao.updateEmail(customer , newEmail);
 		return customer;
 	}
