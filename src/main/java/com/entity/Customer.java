@@ -1,66 +1,82 @@
 package com.entity;
 
 public class Customer {
-	
-	private int id;
+    public Customer(){}
+    public Customer(String email){
+        this.email = email;
+    }
 
-	private String name;
+    private int id;
 
-	private String email;
+    private String name;
 
-	private int phone;
+    private String email;
 
-	private String address;
+    private int phone;
 
-	private String token;
-	
+    private String address;
 
-	public String getName() {
-		return name;
-	}
+    private String token;
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public Product getProduct() {
+        return product;
+    }
 
-	public String getEmail() {
-		return email;
-	}
+    public void setProduct(Product product) {
+        this.product = product;
+    }
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
+    private Product product;
 
-	public int getPhone() {
-		return phone;
-	}
 
-	public void setPhone(int phone) {
-		this.phone = phone;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public String getAddress() {
-		return address;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public void setAddress(String address) {
-		this.address = address;
-	}
+    public String getEmail() {
+        return email;
+    }
 
-	public String getToken() {
-		return token;
-	}
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
-	public void setToken(String token) {
-		this.token = token;
-	}
+    public int getPhone() {
+        return phone;
+    }
 
-	public int getId() {
-		return id;
-	}
+    public void setPhone(int phone) {
+        this.phone = phone;
+    }
 
-	public void setId(int id) {
-		this.id = id;
-	}
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+
 
 }
